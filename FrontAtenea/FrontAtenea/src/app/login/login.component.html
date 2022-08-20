@@ -1,44 +1,29 @@
-<p>login works!</p>
+<div class="bg-claro">
+    <div class="bg-shape">
+        <div class="barra"> Atenea Capacitacion</div>
 
+        <div class="container">
 
-<ng-container class="d-flex ">
+            <div class="d-flex">
 
-    <form class="card account-container">
-        <div class="title title-white">
-            Inicia Sesión
+                <div class="container-img">
+                    <div>
+                        <img class="img" [src]="atenea" alt="Login" />
+                    </div>
+                    <div class="center-button">
+
+                        <button mat-button mat-raised-button color="primary" class="boton"
+                            routerLink="/register">Regístrate</button>
+                    </div>
+
+                </div>
+
+                <app-login-card></app-login-card>
+
+            </div>
         </div>
-        <mat-form-field class="title-white">
-            <mat-label class="title-white">Email</mat-label>
-            <input class="title-white" matInput placeholder="Email" [formControl]="emailFormControl"
-                [(ngModel)]="loginData.Email" name="email" required>
-            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                Please enter a valid email address
-            </mat-error>
-            <mat-error *ngIf="emailFormControl.hasError('required')">
-                Email is
-                <strong>required</strong>
-            </mat-error>
-        </mat-form-field>
-
-        <mat-form-field class="title-white">
-
-            <mat-label class="title-white">Password</mat-label>
-            <input class="title-white" matInput placeholder="Password" [formControl]="pwdFormControl"
-                [type]="hidePassword ? 'password' : 'text'" [(ngModel)]="loginData.Password" name="pwd" required>
-
-            <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{hidePassword ? 'visibility_off' :
-                'visibility'}}
-            </mat-icon>
+    </div>
 
 
-            <mat-error *ngIf="pwdFormControl.hasError('required')">
-                Password is
-                <strong>required</strong>
-            </mat-error>
-        </mat-form-field>
 
-        <button mat-button mat-raised-button color="primary" (click)="loginUser()" class="button">Entrar</button>
-    </form>
-
-    <button mat-button routerLink="/register">or Register</button>
-</ng-container>
+</div>
