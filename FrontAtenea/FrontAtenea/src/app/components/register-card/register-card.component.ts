@@ -26,7 +26,12 @@ export class RegisterCardComponent implements OnInit {
   constructor(private router: Router) {}
 
   loginUser() {
-    if (!this.usrFormControl.valid || !this.pwdFormControl.valid) return;
+    if (
+      !this.usrFormControl.valid ||
+      !this.pwdFormControl.valid ||
+      !this.emailFormControl.valid
+    )
+      return;
 
     this.router.navigate(['home']);
   }
