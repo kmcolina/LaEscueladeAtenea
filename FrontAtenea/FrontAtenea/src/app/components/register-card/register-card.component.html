@@ -2,7 +2,7 @@
 
     <form class="card account-container">
         <div class="title title-white">
-            Inicia Sesión
+            Regístrate
         </div>
         <mat-form-field class="title-white p-b">
             <mat-label class="title-white">Usuario</mat-label>
@@ -14,6 +14,20 @@
             <mat-error *ngIf="usrFormControl.hasError('required')">
                 Usuario es
                 <strong>obligatorio</strong>
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="title-white">
+            <mat-label class="title-white">Correo</mat-label>
+            <input class="title-white" matInput placeholder="Correo" [formControl]="emailFormControl" name="Correo"
+                required>
+            <mat-error class="title-white"
+                *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Ingresa un Correo Valido
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+                Correo es
+                <strong>Obligatorio</strong>
             </mat-error>
         </mat-form-field>
 

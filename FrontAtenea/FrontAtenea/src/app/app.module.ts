@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginCardComponent } from './components/login-card/login-card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegisterCardComponent } from './components/register-card/register-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     LoginCardComponent,
     FooterComponent,
+    RegisterCardComponent,
   ],
   imports: [
     BrowserModule,

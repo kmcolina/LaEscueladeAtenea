@@ -4,11 +4,11 @@ import { Router } from '@angular/router';
 import { AccountDTO } from 'src/app/models/accountDto';
 
 @Component({
-  selector: 'app-login-card',
-  templateUrl: './login-card.component.html',
-  styleUrls: ['./login-card.component.scss'],
+  selector: 'app-register-card',
+  templateUrl: './register-card.component.html',
+  styleUrls: ['./register-card.component.scss'],
 })
-export class LoginCardComponent implements OnInit {
+export class RegisterCardComponent implements OnInit {
   username: string = '';
   password: string = '';
   show: boolean = false;
@@ -17,10 +17,12 @@ export class LoginCardComponent implements OnInit {
 
   hidePassword = true;
   loginData: AccountDTO = { Usuario: '', Password: '' };
-
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
   pwdFormControl = new FormControl('', [Validators.required]);
   usrFormControl = new FormControl('', [Validators.required]);
-
   constructor(private router: Router) {}
 
   loginUser() {
