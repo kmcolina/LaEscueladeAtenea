@@ -27,15 +27,11 @@ color: #ff5800 !important;
     height: 80px;
 }
 
-.bg-claro{
-    background-color:#63A7FE;
-  
-}
 
-
-   .bg-shape{
+  html{
     width: 1280px;
-    height: 800px;
+    height: 850px;
     background:
-    linear-gradient(122deg, #628DFF 50%, transparent 45%) 100% 100%
+    linear-gradient(122deg, #628DFF 50%, #63A7FE 45%) 100% 100%
+
   }
