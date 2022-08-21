@@ -86,6 +86,7 @@ export class HomeComponent implements OnInit {
 
     this.userName = 'Yker Mendoza';
     this.location = 'Caracas, Venezuela';
+    this.active = 3;
   }
 
   ngOnInit(): void {}
