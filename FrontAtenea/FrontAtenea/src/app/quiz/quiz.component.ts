@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz.component.scss'],
 })
 export class QuizComponent implements OnInit {
-  atenea = '/assets/MochueloLogin.svg';
+  atenea = '/assets/MochueloHome.svg';
   constructor() {}
 
   ngOnInit(): void {}

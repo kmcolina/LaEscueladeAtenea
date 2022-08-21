@@ -86,5 +86,7 @@ export class RadioButtonQuizComponent implements OnInit {
 
   goNext() {
     console.log('respuesta ', this.anwserQuestion);
+
+    this.router.navigate(['endRegister']);
   }
 }
