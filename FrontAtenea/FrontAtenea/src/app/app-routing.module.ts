@@ -8,6 +8,18 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent },
+
+  {
+    path: 'skills',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./quiz/quiz.module').then((m) => m.QuizModule),
+      },
+    ],
+  },
+
   { path: '**', redirectTo: 'login' },
 ];
 

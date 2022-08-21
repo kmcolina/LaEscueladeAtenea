@@ -16,6 +16,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { LoginCardComponent } from './components/login-card/login-card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RegisterCardComponent } from './components/register-card/register-card.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { QuizComponent } from './quiz/quiz.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,7 @@ import { RegisterCardComponent } from './components/register-card/register-card.
     LoginCardComponent,
     FooterComponent,
     RegisterCardComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ import { RegisterCardComponent } from './components/register-card/register-card.
     MatButtonModule,
     MatInputModule,
     MatIconModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
