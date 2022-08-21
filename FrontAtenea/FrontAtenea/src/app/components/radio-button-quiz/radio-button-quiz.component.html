@@ -1,1 +1,66 @@
 <p>radio-button-quiz works!</p>
+<!-- <mat-toolbar color="primary" class="banner-container">
+    <span> My Angular Material Application </span>
+</mat-toolbar>
+
+ -->
+
+<div class="barra">
+
+    <div class="barra-a">
+        Atenea
+    </div>
+    <div class="barra-n">
+        Noctua
+    </div>
+</div>
+
+<div class="col-i">
+
+
+    <div class="card-check">
+        <form class="cont-bg" class="example-section" [formGroup]="form" (ngSubmit)="submit()" novalidate>
+
+            <div class="title">pregunta 1</div>
+            <div class="cont-main">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue suscipit ornare. Duis posuere
+                    interdum vulputate. Aenean auctor orci ac accumsan blandit. Nullam lectus neque, auctor quis tortor
+                    vel, lobortis rhoncus libero. Maecenas sed vehicula dolor, at tristique nisl. Sed pulvinar est
+                    porttitor diam facilisis posuere. Nulla commodo, felis sit amet mollis bibendum, leo odio
+                    sollicitudin lacus, in tristique metus justo at
+
+                </div>
+
+                <div>
+                    <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+                        <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+                            {{season}}
+                        </mat-radio-button>
+                    </mat-radio-group>
+                </div>
+
+            </div>
+            <div class=" btn">
+                <button type="submit" class="btn-shape">Siguiente</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <div class="col-d">
+        <div class="mochuelo">
+
+            <img src="/assets/MochueloLateral.svg" alt="">
+        </div>
+        <div class="text">
+            Selecciona ahora los páneles con las temáticas que te interesen conocer. Esto nos dará certeza al
+            recomendarte
+            cursos para aprender.
+        </div>
+
+    </div>
+
+
+</div>

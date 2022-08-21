@@ -6,7 +6,7 @@ import { QuizRoutingModule } from './quiz-routing.module';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
-
+import { MatRadioModule } from '@angular/material/radio';
 @NgModule({
   declarations: [RadioButtonQuizComponent, CheckBoxSkillComponent],
   imports: [
@@ -15,6 +15,7 @@ import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
     MatCheckboxModule,
     ReactiveFormsModule,
     MatToolbarModule,
+    MatRadioModule,
   ],
 })
 export class QuizModule {}
