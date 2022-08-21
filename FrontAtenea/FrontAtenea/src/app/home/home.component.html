@@ -1,7 +1,5 @@
-<p>home works!</p>
-
-<mat-toolbar color="primary" class="banner-container">
-    <span> My Angular Material Application </span>
+<mat-toolbar color="primary" class="banner-container g-bar" style="height: 38px;">
+    <span style="padding-left:15px"> Noctua </span>
 </mat-toolbar>
 
 <div class="container-top">
@@ -84,7 +82,7 @@
     </div>
 
     <div class="der">
-        adsad
+
     </div>
 
 </div>
@@ -165,7 +163,23 @@
 
     </div>
     <div class=" card-d">
-        panel derecho
+
+        <div class="profile" style="margin-bottom: 15px" *ngFor="let item of rakingProfiles">
+            <div class="avatar">
+                <img src={{item.avatar}} alt="">
+                <div class="raking-name">
+                    {{item.name}}
+                    <div class="raking-location">
+                        {{item.location}}
+                    </div>
+                </div>
+                <div class="ranking-value">
+                    {{item.rval}}
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
 

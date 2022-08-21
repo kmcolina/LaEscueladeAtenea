@@ -46,6 +46,39 @@ export class HomeComponent implements OnInit {
     },
   ];
 
+  rakingProfiles = [
+    {
+      avatar: '/assets/avatar1.svg',
+      name: 'Jose Gonzalez',
+      location: 'Caracas, Venezuela',
+      rval: 995,
+    },
+    {
+      avatar: '/assets/avatar2.svg',
+      name: 'Karelys Hurtado',
+      location: 'Caracas, Venezuela',
+      rval: 954,
+    },
+    {
+      avatar: '/assets/avatar3.svg',
+      name: 'Andres Garrido',
+      location: 'Miranda, Venezuela',
+      rval: 741,
+    },
+    {
+      avatar: '/assets/avatar4.svg',
+      name: 'Pedro Martinez',
+      location: 'Caracas, Venezuela',
+      rval: 584,
+    },
+    {
+      avatar: '/assets/avatar5.svg',
+      name: 'Luis Alfaro',
+      location: 'Caracas, Venezuela',
+      rval: 254,
+    },
+  ];
+
   constructor(private formBuilder: FormBuilder, private router: Router) {
     this.form = formBuilder.group({
       selectedSkills: new FormArray([]),
