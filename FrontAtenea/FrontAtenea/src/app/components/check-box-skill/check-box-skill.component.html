@@ -3,6 +3,7 @@
 </mat-toolbar>
 
  -->
+
 <div class="barra">
 
     <div class="barra-a">
@@ -13,42 +14,53 @@
     </div>
 </div>
 
-<div class="card-check">
-    <form class="cont-bg" class="example-section" [formGroup]="form" (ngSubmit)="submit()" novalidate>
-
-        <div class="title">Datos Profesionales</div>
-        <div class="cont-main">
-
-            <div class="cat action" *ngFor="let car of skillsAvaible; index as i">
+<div class="col-i">
 
 
-                <label [for]="'myCheckbox-' + i">
+    <div class="card-check">
+        <form class="cont-bg" class="example-section" [formGroup]="form" (ngSubmit)="submit()" novalidate>
 
-                    <input type="checkbox" [id]="'myCheckbox-' + i" formArrayName="selectedSkills"
-                        (change)="onCheckboxChange($event)" [value]="car.name" />
+            <div class="title">Datos Profesionales</div>
+            <div class="cont-main">
 
-                    <span>
-                        <img [src]="car.img" />
-                        <div class="title-white">{{car.title}}</div>
+                <div class="cat action" *ngFor="let car of skillsAvaible; index as i">
 
-                        <!--  <img [src]="car.img" /> -->
-                    </span>
 
-                </label>
+                    <label [for]="'myCheckbox-' + i">
+
+                        <input type="checkbox" [id]="'myCheckbox-' + i" formArrayName="selectedSkills"
+                            (change)="onCheckboxChange($event)" [value]="car.name" />
+
+                        <span>
+                            <img [src]="car.img" />
+                            <div class="title-white">{{car.title}}</div>
+
+                            <!--  <img [src]="car.img" /> -->
+                        </span>
+
+                    </label>
+                </div>
             </div>
-        </div>
-        <div class="btn">
-            <button type="submit" class="btn-shape">Siguiente</button>
-        </div>
+            <div class="btn">
+                <button type="submit" class="btn-shape">Siguiente</button>
+            </div>
 
 
-    </form>
-</div>
-
-
-<div class="container">
-    <div class="cat action">
-        <label>
-            <input type="checkbox" value="1"><span>Action</span>
-        </label>
+        </form>
     </div>
+
+    <div class="col-d">
+        <div class="mochuelo">
+
+            <img src="/assets/MochueloLateral.svg" alt="">
+        </div>
+        <div class="text">
+            Selecciona ahora los páneles con las temáticas que te interesen conocer. Esto nos dará certeza al
+            recomendarte
+            cursos para aprender.
+        </div>
+
+    </div>
+
+
+</div>

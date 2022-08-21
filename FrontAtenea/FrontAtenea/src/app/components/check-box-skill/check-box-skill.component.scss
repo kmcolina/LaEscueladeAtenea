@@ -8,12 +8,14 @@
   }
   
   .card-check{
-    width: 810.03px;
+  //  width: 810.03px;
 height: 563.68px;
 background: rgba(90, 55, 180, 0.5);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 9px;
 padding: 24px;
+margin-left: 40px;
+margin-bottom: 51px;
   }
 
 
@@ -174,4 +176,18 @@ font-size: 24px;
 .btn{
 display: flex;
 justify-content: center;
+}
+
+
+.text{
+  margin: 0 50px 0 50px;
+  font-family: 'Ubuntu' !important;
+  text-align: justify !important;;
+font-style: normal;
+font-weight: 400;
+font-size: 20.23px;
+line-height: 23px;
+text-align: center;
+
+color: #000000;
 }
