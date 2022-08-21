@@ -26,6 +26,7 @@ padding: 24px;
   }
   
   .cont-main {
+    padding-bottom: 32px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -168,4 +169,9 @@ padding: 24px;
   font-family: 'Ubuntu';
 font-size: 24px;
     padding-top: 20px;
+}
+
+.btn{
+display: flex;
+justify-content: center;
 }

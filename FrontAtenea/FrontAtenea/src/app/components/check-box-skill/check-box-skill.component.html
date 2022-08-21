@@ -1,7 +1,17 @@
-<mat-toolbar color="primary" class="banner-container">
+<!-- <mat-toolbar color="primary" class="banner-container">
     <span> My Angular Material Application </span>
 </mat-toolbar>
 
+ -->
+<div class="barra">
+
+    <div class="barra-a">
+        Atenea
+    </div>
+    <div class="barra-n">
+        Noctua
+    </div>
+</div>
 
 <div class="card-check">
     <form class="cont-bg" class="example-section" [formGroup]="form" (ngSubmit)="submit()" novalidate>
@@ -27,9 +37,11 @@
                 </label>
             </div>
         </div>
+        <div class="btn">
+            <button type="submit" class="btn-shape">Submit</button>
+        </div>
 
 
-        <button type="submit">Submit</button>
     </form>
 </div>
 
