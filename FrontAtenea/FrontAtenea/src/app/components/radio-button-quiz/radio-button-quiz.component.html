@@ -23,6 +23,7 @@
 
         <div class="title">Pregunta 1</div>
         <div class="cont-main">
+
             <div class="body-question">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue suscipit ornare. Duis posuere
                 interdum vulputate. Aenean auctor orci ac accumsan blandit. Nullam lectus neque, auctor quis tortor
@@ -34,7 +35,7 @@
 
             <div class="rtl">
                 <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group"
-                    [(ngModel)]="favoriteSeason">
+                    [(ngModel)]="anwserQuestion">
                     <mat-radio-button class="example-radio-button tu" *ngFor="let season of seasons" [value]="season">
                         {{season}}
                     </mat-radio-button>

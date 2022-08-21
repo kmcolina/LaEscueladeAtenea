@@ -13,15 +13,30 @@ export class RadioButtonQuizComponent implements OnInit {
   valor2!: number;
   resultado!: number;
 
-  operacionSeleccionada: string = 'suma';
-
-  favoriteSeason!: string;
+  anwserQuestion!: string;
   seasons: string[] = [
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.',
     'Spring',
     'Summer',
     'Autumn',
   ];
+
+  seasones = [
+    {
+      q: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue suscipit ornare. Duis posuere interdum vulputate. Aenean auctor orci ac accumsan blandit. Nullam lectus neque, auctor quis tortor vel, lobortis rhoncus libero. Maecenas sed vehicula dolor, at tristique nisl. Sed pulvinar est porttitor diam facilisis posuere. Nulla commodo, felis sit amet mollis bibendum, leo odio sollicitudin lacus, in tristique metus justo at',
+      r: ['winter', 'Spring', 'Summer', 'Autumn'],
+    },
+    {
+      q: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam congue suscipit ornare. Duis posuere interdum vulputate. Aenean auctor orci ac accumsan blandit. Nullam lectus neque, auctor quis tortor vel, lobortis rhoncus libero. Maecenas sed vehicula dolor, at tristique nisl. Sed pulvinar est porttitor diam facilisis posuere. Nulla commodo, felis sit amet mollis bibendum, leo odio sollicitudin lacus, in tristique metus justo at',
+      r: [
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.',
+        'Spring',
+        'Summer',
+        'Autumn',
+      ],
+    },
+  ];
+
   skillsAvaible = [
     {
       title: 'Lenguaje Python',
@@ -70,6 +85,6 @@ export class RadioButtonQuizComponent implements OnInit {
   }
 
   goNext() {
-    console.log('operar ', this.favoriteSeason);
+    console.log('respuesta ', this.anwserQuestion);
   }
 }

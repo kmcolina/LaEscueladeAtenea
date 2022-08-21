@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.scss'],
 })
 export class RegisterComponent implements OnInit {
-  atenea = '/assets/atenea.jpg';
+  atenea = '/assets/MochueloLogin.svg';
   constructor() {}
 
   ngOnInit(): void {}
