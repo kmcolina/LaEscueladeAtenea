@@ -23,9 +23,69 @@
 <div class="container-down">
 
     <div class="card-i">
-        izquierdo
+        <ng-container [ngSwitch]="this.active">
+
+            <div *ngSwitchCase="0">
+
+                case 0
+            </div>
+            <div *ngSwitchCase="1">
+
+                <div class="card-completos">
+                    <span class="cont-card">
+                        <img class="img-g" [src]="skillsCompletes[0].img" />
+                        <div class="title-g">{{skillsCompletes[0].title}}</div>
+
+
+                    </span>
+                    <span class="progress">
+
+                    </span>
+                </div>
+
+
+            </div>
+
+            <div *ngSwitchCase="2" class="only-text">
+
+                ¡No tienes cursos incompletos!
+
+
+            </div>
+            <div *ngSwitchCase="3">
+                <div class="card-check">
+                    <form class="cont-bg" class="example-section" [formGroup]="form" novalidate>
+
+
+                        <div class="cont-main">
+
+                            <div class="cat action" *ngFor="let car of skillsAvaible; index as i">
+
+
+                                <label [for]="'myRadio-' + i">
+                                    <input type="radio" [id]="'myRadio-' + i" formArrayName="selectedSkills"
+                                        (click)="submit(car)" [value]="car.name" />
+
+                                    <span>
+                                        <img [src]="car.img" />
+                                        <div class="title-white">{{car.title}}</div>
+
+                                        <!--  <img [src]="car.img" /> -->
+                                    </span>
+
+                                </label>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </ng-container>
+
     </div>
-    <div class="card-d">
+    <div class=" card-d">
         panel derecho
     </div>
 

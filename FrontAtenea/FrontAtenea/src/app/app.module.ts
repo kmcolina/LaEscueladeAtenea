@@ -18,8 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { RegisterCardComponent } from './components/register-card/register-card.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { QuizComponent } from './quiz/quiz.component';
-//import { CheckBoxSkillComponent } from './components/check-box-skill/check-box-skill.component';
-//import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-button-quiz.component';
+import { CheckBoxSkillComponent } from './components/check-box-skill/check-box-skill.component';
+import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-button-quiz.component';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -31,8 +32,8 @@ import { QuizComponent } from './quiz/quiz.component';
     FooterComponent,
     RegisterCardComponent,
     QuizComponent,
-    //CheckBoxSkillComponent,
-    //RadioButtonQuizComponent,
+    CheckBoxSkillComponent,
+    RadioButtonQuizComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +47,7 @@ import { QuizComponent } from './quiz/quiz.component';
     MatInputModule,
     MatIconModule,
     MatCheckboxModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

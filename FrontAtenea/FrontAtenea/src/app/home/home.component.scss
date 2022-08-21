@@ -19,6 +19,9 @@ border-radius: 9px;
 
 width: 897px;
 height: 397px;
+
+padding: 24px;
+box-sizing: border-box;
 }
 
 .card-d{
@@ -51,3 +54,159 @@ line-height: 29px;
     width: 137.95px;
 height: 29.36px;
 }
+
+.card-check{
+    //  width: 810.03px;
+  height: 563.68px;
+  padding: 24px;
+  margin-left: 5px;
+  margin-bottom: 51px;
+    }
+
+
+    .cat{
+
+        box-sizing: border-box;
+        padding: 24px 24px 16px 16px;
+        box-sizing: border-box;
+    
+        background-color: #104068;
+        border-radius: 9px;
+     
+        overflow: hidden;
+        float: left;
+        width: 340.44px;
+        height: 126.45px;
+        border-radius: 9px;
+        background: #5C4BC6;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     
+    
+        img {
+          border-radius:  var(--border-radius);;
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+        
+       
+        }
+    
+      }
+      
+    .cat label span {
+      width: 340.44px;
+      height: 126.45px;
+      border-radius: 9px;
+      background: #5C4BC6;
+    
+      text-align: center;
+      padding: 3px 0;
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+    
+    .cat label input {
+      position: absolute;
+      display: none;
+      color: #fff !important;
+    }
+      
+    .cat input:checked + span {
+      width: 99%;
+      height: 92.5%;
+      border-radius: 9px;
+      border: 1px solid #fff;
+      color: #ffffff;
+      text-shadow: 0 0  6px rgba(0, 0, 0, 0.8);
+    }
+    
+
+    
+   .cont-bg {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cont-main {
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-content: center;
+    
+  }
+  
+
+  .title-white{
+    font-family: 'Ubuntu';
+  font-size: 24px;
+      padding-top: 20px;
+  }
+    
+
+  .only-text{
+    display: flex;
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 40px;
+margin-top: 150px;
+justify-content: center;
+  }
+
+  .card-completos{
+  width: 303px;
+  height: 126px;
+
+    background: rgba(90, 55, 180, 0.5);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 9px;
+
+padding: 15px;
+    box-sizing: border-box;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+  }
+
+  .cont-card{
+    display: flex;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+  }
+
+  .img-g {
+    border-radius:  var(--border-radius);;
+    width: 37px;
+    height: 37px;
+    object-fit: cover;
+  
+  }
+
+  .title-g {
+    font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+  }
+
+  .progress{
+    background-color: #fff;
+    width:274.84px;
+    height:10.59px;
+
+    background: rgb(0,77,155);
+    background: linear-gradient(90deg, rgba(0,77,155,1) 50%, rgba(255,255,255,1) 50%);
+  }

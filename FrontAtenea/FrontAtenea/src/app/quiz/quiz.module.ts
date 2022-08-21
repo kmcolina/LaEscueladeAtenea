@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
 import { MatRadioModule } from '@angular/material/radio';
 @NgModule({
-  declarations: [RadioButtonQuizComponent, CheckBoxSkillComponent],
+  declarations: [],
   imports: [
     CommonModule,
     QuizRoutingModule,

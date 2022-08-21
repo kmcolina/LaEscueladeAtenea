@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CheckBoxSkillComponent } from './components/check-box-skill/check-box-skill.component';
+import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-button-quiz.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { QuizComponent } from './quiz/quiz.component';
@@ -10,15 +12,18 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomeComponent },
   { path: 'endRegister', component: QuizComponent },
+
   {
     path: 'skills',
-    children: [
-      {
-        path: '',
-        loadChildren: () =>
-          import('./quiz/quiz.module').then((m) => m.QuizModule),
-      },
-    ],
+    component: CheckBoxSkillComponent,
+  },
+  {
+    path: 'skills/test-skill',
+    component: RadioButtonQuizComponent,
+  },
+  {
+    path: 'endRegister',
+    component: QuizComponent,
   },
 
   { path: '**', redirectTo: 'login' },
