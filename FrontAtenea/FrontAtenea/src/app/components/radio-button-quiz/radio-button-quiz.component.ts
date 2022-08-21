@@ -9,8 +9,19 @@ import { Router } from '@angular/router';
 export class RadioButtonQuizComponent implements OnInit {
   form: FormGroup;
 
+  valor1!: number;
+  valor2!: number;
+  resultado!: number;
+
+  operacionSeleccionada: string = 'suma';
+
   favoriteSeason!: string;
-  seasons: string[] = ['Winter', 'Spring', 'Summer', 'Autumn'];
+  seasons: string[] = [
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit.',
+    'Spring',
+    'Summer',
+    'Autumn',
+  ];
   skillsAvaible = [
     {
       title: 'Lenguaje Python',
@@ -49,20 +60,6 @@ export class RadioButtonQuizComponent implements OnInit {
       selectedSkills: new FormArray([]),
     });
   }
-
-  onCheckboxChange(event: any) {
-    console.log('change');
-    const selectedSkills = this.form.controls['selectedSkills'] as FormArray;
-    if (event.target.checked) {
-      selectedSkills.push(new FormControl(event.target.value));
-    } else {
-      const index = selectedSkills.controls.findIndex(
-        (x) => x.value === event.target.value
-      );
-      selectedSkills.removeAt(index);
-    }
-  }
-
   submit() {
     console.log(this.form.value);
     this.router.navigate(['skills/test-skill']);
@@ -70,5 +67,9 @@ export class RadioButtonQuizComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('init del check');
+  }
+
+  goNext() {
+    console.log('operar ', this.favoriteSeason);
   }
 }
