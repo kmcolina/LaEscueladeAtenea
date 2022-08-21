@@ -30,6 +30,16 @@ export class CheckBoxSkillComponent implements OnInit {
       name: 'java',
       img: '/assets/java.svg',
     },
+    {
+      title: 'CSS',
+      name: 'css',
+      img: '/assets/css.png',
+    },
+    {
+      title: 'Lenguaje java',
+      name: 'java',
+      img: '/assets/java.svg',
+    },
   ];
 
   constructor(private formBuilder: FormBuilder, private router: Router) {
