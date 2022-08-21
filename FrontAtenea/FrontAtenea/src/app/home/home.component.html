@@ -10,18 +10,12 @@
 </div>
 
 <div class="nav-bar">
-    jhvjbkvhjvkvvj
 
-    <div *ngFor=" let item from navBarText">
-
-        sadadsadadad
+    <div class="element" *ngFor="let item of navBarText;  let i = index" [class.active]="this.active === i"
+        (click)=activeItem(i)>
         {{item}}
     </div>
-    <div class="element" *ngFor="let item from navBarText">
 
-        sadadsadadad
-        {{item}}
-    </div>
 
 
 </div>

@@ -28,3 +28,26 @@ border-radius: 9px;
 width: 305px;
 height: 397px;
 }
+
+.nav-bar{
+display: flex;
+gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0 20px 30px;
+    padding: 3px;
+}
+
+.element{
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+}
+
+.active {
+    background-color: #5A37B4;
+    border-radius: 10px;
+    width: 137.95px;
+height: 29.36px;
+}
