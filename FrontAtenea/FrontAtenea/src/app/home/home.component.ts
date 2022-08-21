@@ -12,6 +12,9 @@ export class HomeComponent implements OnInit {
   active!: number;
   form!: FormGroup;
 
+  userName!: string;
+  location!: string;
+
   skillsAvaible = [
     {
       title: 'Lenguaje Python',
@@ -47,6 +50,9 @@ export class HomeComponent implements OnInit {
     this.form = formBuilder.group({
       selectedSkills: new FormArray([]),
     });
+
+    this.userName = 'Yker Mendoza';
+    this.location = 'Caracas, Venezuela';
   }
 
   ngOnInit(): void {}
