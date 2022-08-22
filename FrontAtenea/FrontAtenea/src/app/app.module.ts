@@ -22,7 +22,6 @@ import { CheckBoxSkillComponent } from './components/check-box-skill/check-box-s
 import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-button-quiz.component';
 import { MatRadioModule } from '@angular/material/radio';
 import { PrincipalComponent } from './components/principal/principal.component';
-import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { DatailCourseComponent } from './components/datail-course/datail-course.component';
 import { PanelLectionComponent } from './components/panel-lection/panel-lection.component';
@@ -42,12 +41,12 @@ import { FinishQuizComponent } from './components/finish-quiz/finish-quiz.compon
     CheckBoxSkillComponent,
     RadioButtonQuizComponent,
     PrincipalComponent,
-    CourseDetailComponent,
     IntroComponent,
     DatailCourseComponent,
     PanelLectionComponent,
     QuizLectionComponent,
     FinishQuizComponent,
+    DatailCourseComponent,
   ],
   imports: [
     BrowserModule,

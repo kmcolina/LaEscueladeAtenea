@@ -96,7 +96,7 @@ export class HomeComponent implements OnInit {
   activeItem(item: any) {
     console.log('item', item);
     this.active = item;
-
+    this.courseSelect = '';
     switch (item) {
       case 0:
         break;
