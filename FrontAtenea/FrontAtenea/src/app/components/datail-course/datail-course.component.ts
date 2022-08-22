@@ -11,7 +11,7 @@ export class DatailCourseComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  goToModuleDetail() {
+  goToModuleLection() {
     this.router.navigate(['lection']);
   }
 }
