@@ -171,23 +171,31 @@
 
     </div>
     <div class=" card-d">
-
-        <div class="profile" style="margin-bottom: 15px" *ngFor="let item of rakingProfiles">
-            <div class="avatar">
-                <img src={{item.avatar}} alt="">
-                <div class="raking-name">
-                    {{item.name}}
-                    <div class="raking-location">
-                        {{item.location}}
+        <ng-container *ngIf="this.active !== 3">
+            <div class="profile" style="margin-bottom: 15px" *ngFor="let item of rakingProfiles">
+                <div class="avatar">
+                    <img src={{item.avatar}} alt="">
+                    <div class="raking-name">
+                        {{item.name}}
+                        <div class="raking-location">
+                            {{item.location}}
+                        </div>
                     </div>
-                </div>
-                <div class="ranking-value">
-                    {{item.rval}}
+                    <div class="ranking-value">
+                        {{item.rval}}
+                    </div>
+
                 </div>
 
             </div>
+        </ng-container>
 
-        </div>
+
+        <ng-container *ngIf="this.active === 3">
+            <div class="select-c">
+                Selecciona un Curso
+            </div>
+        </ng-container>
     </div>
 
 
