@@ -25,6 +25,9 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { DatailCourseComponent } from './components/datail-course/datail-course.component';
+import { PanelLectionComponent } from './components/panel-lection/panel-lection.component';
+import { QuizLectionComponent } from './components/quiz-lection/quiz-lection.component';
+import { FinishQuizComponent } from './components/finish-quiz/finish-quiz.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,9 @@ import { DatailCourseComponent } from './components/datail-course/datail-course.
     CourseDetailComponent,
     IntroComponent,
     DatailCourseComponent,
+    PanelLectionComponent,
+    QuizLectionComponent,
+    FinishQuizComponent,
   ],
   imports: [
     BrowserModule,
