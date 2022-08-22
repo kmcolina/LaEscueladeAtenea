@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CheckBoxSkillComponent } from './components/check-box-skill/check-box-skill.component';
 import { DatailCourseComponent } from './components/datail-course/datail-course.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { PanelLectionComponent } from './components/panel-lection/panel-lection.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-button-quiz.component';
 import { HomeComponent } from './home/home.component';
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'endRegister', component: QuizComponent },
   { path: 'intro', component: IntroComponent },
   { path: 'detailCourse', component: DatailCourseComponent },
+  { path: 'lection', component: PanelLectionComponent },
+
   {
     path: 'skills',
     component: CheckBoxSkillComponent,
