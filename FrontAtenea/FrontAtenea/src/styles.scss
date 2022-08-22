@@ -50,7 +50,11 @@ color: #ff5800 !important;
 
 
 .container{
-    padding: 145px;
+  display: flex;
+  padding-top: 105px;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
 }
 
 .barra{
