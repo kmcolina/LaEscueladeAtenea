@@ -21,6 +21,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { CheckBoxSkillComponent } from './components/check-box-skill/check-box-skill.component';
 import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-button-quiz.component';
 import { MatRadioModule } from '@angular/material/radio';
+import { PrincipalComponent } from './components/principal/principal.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MatRadioModule } from '@angular/material/radio';
     QuizComponent,
     CheckBoxSkillComponent,
     RadioButtonQuizComponent,
+    PrincipalComponent,
   ],
   imports: [
     BrowserModule,
