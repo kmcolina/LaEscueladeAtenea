@@ -134,7 +134,7 @@
 
             </div>
             <div *ngSwitchCase="3">
-                <div class="card-check">
+                <div class="card-check" *ngIf="this.courseSelect== ''">
                     <form class="cont-bg" class="example-section" [formGroup]="form" novalidate>
 
 
@@ -162,6 +162,10 @@
                     </form>
                 </div>
 
+
+                <app-course-detail *ngIf="this.courseSelect!== ''">
+
+                </app-course-detail>
             </div>
         </ng-container>
 

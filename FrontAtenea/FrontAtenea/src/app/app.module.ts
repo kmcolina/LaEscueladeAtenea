@@ -24,6 +24,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 import { IntroComponent } from './components/intro/intro.component';
+import { DatailCourseComponent } from './components/datail-course/datail-course.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { IntroComponent } from './components/intro/intro.component';
     PrincipalComponent,
     CourseDetailComponent,
     IntroComponent,
+    DatailCourseComponent,
   ],
   imports: [
     BrowserModule,

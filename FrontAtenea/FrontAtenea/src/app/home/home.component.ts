@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit {
   userName!: string;
   location!: string;
 
+  courseSelect: string = '';
+
   skillsAvaible = [
     {
       title: 'Lenguaje Python',
@@ -125,7 +127,9 @@ export class HomeComponent implements OnInit {
 
   submit(car: any) {
     console.log('car on subnit', car.name);
+
+    this.courseSelect = car.name;
     //enviar al curso correcpondiente con car.name
-    this.router.navigate(['skills/test-skill']);
+    //this.router.navigate(['skills/test-skill']);
   }
 }
