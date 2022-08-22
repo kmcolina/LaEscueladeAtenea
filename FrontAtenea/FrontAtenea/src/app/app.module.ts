@@ -23,6 +23,7 @@ import { RadioButtonQuizComponent } from './components/radio-button-quiz/radio-b
 import { MatRadioModule } from '@angular/material/radio';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CourseDetailComponent } from './components/course-detail/course-detail.
     RadioButtonQuizComponent,
     PrincipalComponent,
     CourseDetailComponent,
+    IntroComponent,
   ],
   imports: [
     BrowserModule,
