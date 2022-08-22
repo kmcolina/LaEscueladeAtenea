@@ -132,4 +132,8 @@ export class HomeComponent implements OnInit {
     //enviar al curso correcpondiente con car.name
     //this.router.navigate(['skills/test-skill']);
   }
+
+  close() {
+    this.router.navigate(['']);
+  }
 }
