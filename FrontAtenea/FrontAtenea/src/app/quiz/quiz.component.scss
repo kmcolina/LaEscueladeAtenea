@@ -55,3 +55,14 @@ width: 640px;
   line-height: 25px;
   
   }
+
+  .d-flex{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    margin-bottom: 42px;
+  }

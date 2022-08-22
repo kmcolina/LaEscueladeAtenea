@@ -33,7 +33,7 @@ export class RegisterCardComponent implements OnInit {
     )
       return;
 
-    this.router.navigate(['home']);
+    this.router.navigate(['skills']);
   }
 
   submit() {
