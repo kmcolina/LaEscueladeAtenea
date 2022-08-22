@@ -8,7 +8,7 @@ footer {
     padding: 0 20px;
     z-index: 1;
     flex-grow: 1;
-    // width: calc(100% - 64px);
+ width: calc(100% - 64px);
   
     &.over {
       position: relative;
@@ -17,4 +17,6 @@ footer {
       left: 0;
     }
   }
+  
+
   

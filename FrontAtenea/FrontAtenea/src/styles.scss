@@ -2,11 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 
-html, body { height: 100%;  color: white;font-family: 'Ubuntu' !important}
-body { margin: 0; font-family: 'Ubuntu';
-  color: white;
+html, body { 
+  
+  height: 100%; 
+   color: white;font-family: 
+   'Ubuntu' !important;
+  
+   box-sizing: border-box;
+  }
+.main-container{
+  // position: absolute;
+  margin-top: 0;
+  padding-left: 0;
+  width: 100%;
+  min-height: calc(100vh - 40px);
+
+    
+} 
+/* html{
+  width: 1280px;
+  height: 850px;
+  background:
+  linear-gradient(122deg, #628DFF 50%, #63A7FE 45%) 100% 100%;
   box-sizing: border-box;
+
+
 }
+*/
 
 .title-white{
    color: white;
@@ -69,16 +91,6 @@ display: flex;
 }
 
 
-  html{
-    width: 1280px;
-    height: 850px;
-    background:
-    linear-gradient(122deg, #628DFF 50%, #63A7FE 45%) 100% 100%;
-    box-sizing: border-box;
-  
-
-  }
-
 
   .btn-shape{
     font-family: 'Ubuntu' !important;
@@ -110,3 +122,5 @@ line-height: 21px;
     gap: 50px;
   }
  
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

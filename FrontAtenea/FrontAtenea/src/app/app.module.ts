@@ -27,6 +27,7 @@ import { DatailCourseComponent } from './components/datail-course/datail-course.
 import { PanelLectionComponent } from './components/panel-lection/panel-lection.component';
 import { QuizLectionComponent } from './components/quiz-lection/quiz-lection.component';
 import { FinishQuizComponent } from './components/finish-quiz/finish-quiz.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { FinishQuizComponent } from './components/finish-quiz/finish-quiz.compon
     MatIconModule,
     MatCheckboxModule,
     MatRadioModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
